@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roles</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- side bar -->
+    <aside class="side-nav">
+        <div class="side-bar">
+            <div class="logo">
+                <img src="assets/TezoLogo.png" id="tezoLogo" alt="tezo-logo" />
+                <img src="assets/handle.png" id="handle-logo" alt="handle" />
+            </div>
+            <p class="all">ALL</p>
+            <div class="dashboard">
+                <img src="assets/Horizontal nav/Dashboard.svg" alt="dashboard" />
+                <span><a href="#" title="Dashboard" class="links">Dashboard</a></span>
+            </div>
+            <div class="dashboard" id="employee-tag">
+                <img src="assets/team.svg" alt="employees-logo" />
+                <span><a href="#" title="Employess" class="links">Employees</a></span>
+            </div>
+            <div class="roles-user">
+                <p>ROLE / USER MANAGEMENT</p>
+                <div class="roles">
+                    
+                    <img src="assets/roles-icon.png" alt="roles-icon" class="role-icon" />
+                    <span><a href="#" title="Roles" class="links">Roles</a></span>
+                    <img src="assets/red-arrow.png" id="right-arrow" alt="right-arrow" />
+                    <div class="color">
+                       <span>k</span>
+                    </div>
+                </div>
+                <div class="access-rights">
+                    <img src="assets/Horizontal nav/assign user.svg" alt="assign_user" class="role-icon" />
+
+                    <span><a href="#" title="Access rights" class="links">Access right</a></span>
+                    <img src="assets/rightarrow.png" id="right-arrow2" alt="right-arrow" />
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="install">
+            <div class="install-update">
+                <p>Install new update 2.3.1A</p>
+                <span>Allow to launch the new update for the AD application</span>
+                <div class="btn">
+                    <button id="dismiss">Dismiss</button>
+                    <button id="accept">Accept</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main-section">
+    <!-- header part -->
+    <header class="header">
+        <div class="search-bar">
+            <img src="assets/bx-search.png" alt="search-icon" id="search" />
+            <input type="text" name="searchbar" placeholder="Search" size="80">
+            <div class="header-icon">
+                <img src="assets/Vertical Navbar/Language.svg" alt="lang-logo" />
+                <img src="assets/Vertical Navbar/Categories.svg" alt="category" />
+                <img src="assets/Vertical Navbar/Mode.svg" alt="mode" />
+                <img src="assets/Vertical Navbar/Notifications.svg" alt="notifications" />
+            </div>
+            <div class="profile">
+
+                <img src="assets/profie-icon.png" alt="profile-icon" />
+
+                <div class="profile-name">
+                    <span>John Abraham</span>
+                    <span id="admin">Admin</span>
+                </div>
+
+                <img src="assets/down-arrow.png" alt="down-arrow" id="down-arrow" />
+
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- role section  -->
+        <div class="role-section">
+            <div class="role-desc">
+                <span>Roles</span>
+                <span>All the roles are configured here</span>
+            </div>
+            <div class="add-role">
+                <img src="assets/add.png" alt="add" id="add"/>
+                <span>Add Role</span>
+            </div>
+
+        </div>
+
+        <!-- filter section -->
+        <div class="filter-section">
+            <div class="filter-section-left">
+                <div class="filter-btn">
+                    <span id="filter">Filter</span>
+                    <img src="assets/sort.png" alt="filter" id="filter-icon" />
+                </div>
+                <select name="department" class="dropdown">
+                    <option value="EN">Department</option>
+                    <option value="EN">Full stack Department</option>
+                    <option value="EN">Quality Assurance</option>
+                </select>
+                <select name="location" class="dropdown">
+                    <option value="EN">Location</option>
+                    <option value="EN">Hyderabad</option>
+                    <option value="EN">Tirupati</option>
+                </select>
+                
+            </div>
+            <div class="order-btn">
+                <div><button id="reset">Reset</button></div>
+                <div><button id="apply">Apply</button></div>
+            </div>
+        </div>
+
+        <!-- main content section  -->
+        <div class="role-container">
+            <div class="role-card">
+                <div class="role-name">
+                    <span>Customer Service Manager</span>
+                    <img src="assets/edit.svg" alt="edit-icon" />
+                </div>
+                <div class="department">
+                    <div class="dept">
+                        <img src="assets/team.svg" alt="team" />
+                        <span>Department</span>
+                    </div>
+                    <span id="dept-name">IT</span>
+            
+                </div>
+                <div class="town">
+                    <div class="dept">
+                        <img src="assets/location-pin-alt-1_svgrepo.com.svg" alt="location-icon" />
+                        <span>Location</span>
+                    </div>
+                    <span id="town-name">Hyderabad</span>
+            
+                </div>
+                <div class="total-emp">
+                    <span>Total Employees</span>
+                    <div class="icons">
+                        <img src="assets/profie-icon.png" alt="profile-icon"  id="profile1"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile2"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile3"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile4"/>
+                        <span id="total-cnt">+43</span>
+                    </div>
+                </div>
+                <div class="view-emp">
+                    <span>View All Employees</span>
+                    <img src="assets/view.png" alt="right-arrow"/>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="role-name">
+                    <span>Ux designer</span>
+                    <img src="assets/edit.svg" alt="edit-icon" />
+                </div>
+                <div class="department">
+                    <div class="dept">
+                        <img src="assets/team.svg" alt="team" />
+                        <span>Department</span>
+                    </div>
+                    <span id="dept-name">Product Engg.</span>
+            
+                </div>
+                <div class="town">
+                    <div class="dept">
+                        <img src="assets/location-pin-alt-1_svgrepo.com.svg" alt="location-icon" />
+                        <span>Location</span>
+                    </div>
+                    <span id="town-name">Hyderabad</span>
+            
+                </div>
+                <div class="total-emp">
+                    <span>Total Employees</span>
+                    <div class="icons">
+                        <img src="assets/profie-icon.png" alt="profile-icon"  id="profile1"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile2"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile3"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile4"/>
+                        <span id="total-cnt">+43</span>
+                    </div>
+                </div>
+                <div class="view-emp">
+                    <span>View All Employees</span>
+                    <img src="assets/view.png" alt="right-arrow"/>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="role-name">
+                    <span>Assistant Backend Developer</span>
+                    <img src="assets/edit.svg" alt="edit-icon" />
+                </div>
+                <div class="department">
+                    <div class="dept">
+                        <img src="assets/team.svg" alt="team" />
+                        <span>Department</span>
+                    </div>
+                    <span id="dept-name">UI/UX</span>
+            
+                </div>
+                <div class="town">
+                    <div class="dept">
+                        <img src="assets/location-pin-alt-1_svgrepo.com.svg" alt="location-icon" />
+                        <span>Location</span>
+                    </div>
+                    <span id="town-name">Hyderabad</span>
+            
+                </div>
+                <div class="total-emp">
+                    <span>Total Employees</span>
+                    <div class="icons">
+                        <img src="assets/profie-icon.png" alt="profile-icon"  id="profile1"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile2"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile3"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile4"/>
+                        <span id="total-cnt">+43</span>
+                    </div>
+                </div>
+                <div class="view-emp">
+                    <span>View All Employees</span>
+                    <img src="assets/view.png" alt="right-arrow"/>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="role-name">
+                    <span>Human Resource Manager</span>
+                    <img src="assets/edit.svg" alt="edit-icon" />
+                </div>
+                <div class="department">
+                    <div class="dept">
+                        <img src="assets/team.svg" alt="team" />
+                        <span>Department</span>
+                    </div>
+                    <span id="dept-name">Product Engg.</span>
+            
+                </div>
+                <div class="town">
+                    <div class="dept">
+                        <img src="assets/location-pin-alt-1_svgrepo.com.svg" alt="location-icon" />
+                        <span>Location</span>
+                    </div>
+                    <span id="town-name">Hyderabad</span>
+            
+                </div>
+                <div class="total-emp">
+                    <span>Total Employees</span>
+                    <div class="icons">
+                        <img src="assets/profie-icon.png" alt="profile-icon"  id="profile1"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile2"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile3"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile4"/>
+                        <span id="total-cnt">+43</span>
+                    </div>
+                </div>
+                <div class="view-emp">
+                    <span>View All Employees</span>
+                    <img src="assets/view.png" alt="right-arrow"/>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="role-name">
+                    <span>Front End Developer</span>
+                    <img src="assets/edit.svg" alt="edit-icon" />
+                </div>
+                <div class="department">
+                    <div class="dept">
+                        <img src="assets/team.svg" alt="team" />
+                        <span>Department</span>
+                    </div>
+                    <span id="dept-name">Product Engg.</span>
+            
+                </div>
+                <div class="town">
+                    <div class="dept">
+                        <img src="assets/location-pin-alt-1_svgrepo.com.svg" alt="location-icon" />
+                        <span>Location</span>
+                    </div>
+                    <span id="town-name">Hyderabad</span>
+            
+                </div>
+                <div class="total-emp">
+                    <span>Total Employees</span>
+                    <div class="icons">
+                        <img src="assets/profie-icon.png" alt="profile-icon"  id="profile1"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile2"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile3"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile4"/>
+                        <span id="total-cnt">+43</span>
+                    </div>
+                </div>
+                <div class="view-emp">
+                    <span>View All Employees</span>
+                    <img src="assets/view.png" alt="right-arrow"/>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="role-name">
+                    <span>Senior Developer</span>
+                    <img src="assets/edit.svg" alt="edit-icon" />
+                </div>
+                <div class="department">
+                    <div class="dept">
+                        <img src="assets/team.svg" alt="team" />
+                        <span>Department</span>
+                    </div>
+                    <span id="dept-name">UI/UX</span>
+            
+                </div>
+                <div class="town">
+                    <div class="dept">
+                        <img src="assets/location-pin-alt-1_svgrepo.com.svg" alt="location-icon" />
+                        <span>Location</span>
+                    </div>
+                    <span id="town-name">Hyderabad</span>
+            
+                </div>
+                <div class="total-emp">
+                    <span>Total Employees</span>
+                    <div class="icons">
+                        <img src="assets/profie-icon.png" alt="profile-icon"  id="profile1"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile2"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile3"/>
+                        <img src="assets/profie-icon.png" alt="profile-icon"   id="profile4"/>
+                        <span id="total-cnt">+43</span>
+                    </div>
+                </div>
+                <div class="view-emp">
+                    <span>View All Employees</span>
+                    <img src="assets/view.png" alt="right-arrow"/>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+   
+</body>
+</html>
