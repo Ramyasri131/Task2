@@ -2,38 +2,32 @@
     font-family: publicsans;
     src: url(assets/fonts/PublicSans-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: albertsans;
+    src: url(assets/fonts/AlbertSans-VariableFont_wght.ttf);
+    
+}
 :root {
-    --background: #FDE9E9;
+    --background: #FDF2F2;
     --btn-color: #d54141;
     --red: red;
     --white: white;
     --black: black;
-    --border: 1px solid#fab0b0;
+    --border:#fab0b0;
     --gray:#8f9294;
     --click:#F44848;
     --gray-50:#FAFAFC;
     --gray-100:#4d4e4e;
-    --border:#c2c3c4;
+    /* --border:#c2c3c4; */
 }
-
-body {
-    margin-top: 0;
-    font-family: publicsans;
-    font-size: 12px;
-    display: flex;
-    background-color: #FCFCFC;
-    gap: 1rem;
-}
-
-/* side bar css */
-.side-nav {
+#side-nav {
     width: 22%;
     background-color: var(--white);
     flex-direction: column;
     display: flex;
     position: relative;
 }
+
 .side-bar {
     margin-left: 1rem;
     /* background-color:red; */
@@ -57,10 +51,21 @@ body {
     height: 1.7rem;
 }
 
-#handle-logo {
-
-    height: 2rem;
-    width: 2rem;
+#handle-logo{
+    width:2rem;
+    height:2rem;
+   /* margin-left:-2rem; */
+   margin-left:-2rem;
+   margin-top:1rem;
+    position:absolute; 
+   outline:none;
+   background: none;
+   border:none; 
+   cursor:pointer;
+}
+#handle-logo img{
+    width:1.6rem;
+    height:1.6rem;
 }
 .dashboard {
 
@@ -78,16 +83,15 @@ body {
     color:var(--gray);
 }
 .roles-user {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     margin-top: 2rem;
 }
 .roles {
     display: flex;
     gap: 1rem;
-    /* background-color: var(--background); */
-    background-color: var(--background);
     height: 2rem;
     padding-top: 1rem;
+    padding-left:1rem;
     /* padding-left:1rem; */
     border-radius: 5px;
 }
@@ -98,7 +102,7 @@ body {
 }
 .color{
   background-color: red;
-    margin-left:1rem;
+    margin-left:-2rem;
     height:3rem;
     margin-top:-1rem;
     border-top-left-radius: 2rem;
@@ -147,6 +151,10 @@ body {
     display: flex;
     margin-top: 1rem;
     gap: 1rem;
+    padding-left:1rem;
+}
+#role-heading{
+    padding-left:1rem;
 }
 .btn {
     margin-top: 1rem;
@@ -159,9 +167,9 @@ body {
     background: #f3bfbf;
 }
 
-/* header css */
+/* styling for header */
 .header {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     
 
@@ -182,35 +190,55 @@ body {
     background-color: var(--white);
     display: flex;
     height:1.7rem;
+    justify-content: space-around;
+    
 }
 
 .search-bar input[type="text"] {
-    height: 2rem;
+    height: 1rem;
     border: none;
     outline: none;
+    font-size: 1rem;
+    margin-top:0.3rem;
+    width:65%;
+   
 }
-
+.search-bar input[type="text"]::placeholder{
+    color:#C5CBD1   ;
+}
 #search {
-    padding-right: 1rem;
-    padding-top:0.5rem;
-    width:1rem;
-    height:1rem;
+    width:1.2rem;
+    height:1.2rem;
+    margin-top:0.3rem;
+
 
 }
 
 .profile {
     display: flex;
+    position:relative;
 }
 
-.profile img {
-    width: 2rem;
-    height: 2rem;
-}
 
+.status{
+    width:0.5rem;
+    height:0.5rem;
+    border-radius:50%;
+    background-color: #38e683;
+    border:2px solid white;
+    position:absolute;
+    left:1rem;
+    top:1rem;
+    /* bottom:1; */
+    /* z-index:2; */
+}
 .profile-name{
     display:flex;
     flex-direction: column;
-    padding-left:1rem;
+    padding-left:0.5rem;
+}
+#admin{
+    font-weight:bold;
 }
 
 #down-arrow {
@@ -220,122 +248,3 @@ body {
     padding-top:0.5rem;
     cursor:pointer;
 }
-
-/* main content */
-
-/* add-employee */
-
-.roles-employees{
-  display:flex;
-  gap:1rem;
-  color:var(--gray-100);
-  font-weight:600;
-  /* padding:5rem; */
-}
-
-#role{
-    font-size:15px;
-}
-#role-right{
-   height:1rem; 
-   width:1rem;
-}
-
-.add-employee-box {
-    background: var(--click);
-    height:1rem;
-    width:8rem;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    padding-left:1.3rem;
-    border-radius: 8px;
-    margin-top:0.5rem;
-    color: var(--white);
-    cursor: pointer;
-}
-
-.all-roles{
-    padding-top:1rem;
-    color:var(--gray);
-}
-#export-icon {
-    width: 0.8rem;
-    height: 0.8rem;
-
-}
-
-.add-employee{
-    margin-top:1rem;
-    display:flex;
-    gap:37rem;
-}
-
-/* role desc */
-#role-data{
-    font-size:14px;
-    font-weight:700;
-}
-
-.role-desc span{
-    color:var(--gray);
-    line-height:1.3rem;
-}
-
-/* styling for content of page */
-
-.details-section{
-    margin-top:1rem;
-    display:flex;
-    flex-wrap:wrap;
-    gap:1rem;
-}
-.details-card{
-    display: flex;
-    padding:1rem;
-    background: var(--white);
-    gap:1rem;
-    width:28.5%;
-    height:13rem;
-    border-radius: 10px;
-    border:1px solid var(--border);
-}
-.employee-details{
-    display:flex;
-}
-.employee-details img{
-    width: 2rem;
-    height: 2rem;
-}
-
-.employee-name{
-    display: flex;
-    flex-direction: column;
-    padding-left:1rem;
-}
-.employee-info{
-    padding:0.5rem;
-    display: flex;
-    gap:1.5rem;
-    margin-top:0.1rem;
-    /* font-size: 13px; */
-}
-.view{
-    display: flex;
-    align-items:flex-end;
-    gap:0.5rem;
-    
-}
-.view img{
-    width:1rem;
-    height:1rem;
-}
-.card-content{
-    width:80%;
-}
-#emp-name{
-    font-weight:600;
-}
-
-
-
-

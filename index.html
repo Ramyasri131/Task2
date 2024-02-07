@@ -5,111 +5,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tezo portal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <!-- sidebar starts from here -->
-    <aside class="side-nav">
-        <div class="side-bar">
-            <div class="logo">
-                <img src="assets/TezoLogo.png" id="tezoLogo" alt="tezo-logo" />
-                <img src="assets/handle.png" id="handle-logo" alt="handle" />
-            </div>
-            <p class="all">ALL</p>
-            <div class="dashboard">
-                <img src="assets/Horizontal nav/Dashboard.svg" alt="dashboard" />
-                <span><a href="#" title="Dashboard" class="links">Dashboard</a></span>
-            </div>
-            <div class="dashboard" id="employee-tag">
-                <img src="assets/Horizontal nav/Employees.svg" alt="employees-logo" />
-                <span><a href="#" title="Employess" class="links">Employees</a></span>
-            </div>
-            <div class="roles-user">
-                <p>ROLE / USER MANAGEMENT</p>
-                <div class="roles">
-                    <img src="assets/Horizontal nav/Roles.svg" alt="roles-icon" class="role-icon" />
-                    <span><a href="#" title="Roles" class="links">Roles</a></span>
-                    <img src="assets/rightarrow.png" id="right-arrow" alt="right-arrow" />
+    <section class="main-section">
+        <!-- sidebar starts from here -->
+
+        <aside id="side-nav">
+            <div class="side-bar">
+                <div class="logo">
+                    <img src="assets/TezoLogo.png" id="tezoLogo" alt="tezo-logo" />
+
                 </div>
-                <div class="access-rights">
-                    <img src="assets/Horizontal nav/assign user.svg" alt="assign_user" class="role-icon" />
-
-                    <span><a href="#" title="Access rights" class="links">Access right</a></span>
-                    <img src="assets/rightarrow.png" id="right-arrow2" alt="right-arrow" />
+                <p class="all" id="defintion">ALL</p>
+                <div class="dashboard">
+                    <img src="assets/Horizontal nav/Dashboard.svg" alt="dashboard" />
+                    <span><a href="role.html" title="Dashboard" class="links">Dashboard</a></span>
                 </div>
-
-            </div>
-
-
-        </div>
-
-        <div class="install">
-            <div class="install-update">
-                <p>Install new update 2.3.1A</p>
-                <span>Allow to launch the new update for the AD application</span>
-                <div class="btn">
-                    <button id="dismiss">Dismiss</button>
-                    <button id="accept">Accept</button>
+                <div class="dashboard" id="employee-tag">
+                    <div class="employee-tag-left">
+                    <img src="assets/Horizontal nav/Employees.svg" alt="employees-logo" />
+                    <span><a href="index.html" title="Employess" class="links">Employees</a></span>
                 </div>
-            </div>
-        </div>
-    </aside>
-
-
-    <div class="main-content">
-        <header class="header">
-            <div class="search-bar">
-                <img src="assets/bx-search.png" alt="search-icon" id="search" />
-                <input type="text" name="searchbar" placeholder="Search" size="80">
-                <div class="header-icon">
-                    <img src="assets/Vertical Navbar/Language.svg" alt="lang-logo" />
-                    <img src="assets/Vertical Navbar/Categories.svg" alt="category" />
-                    <img src="assets/Vertical Navbar/Mode.svg" alt="mode" />
-                    <img src="assets/Vertical Navbar/Notifications.svg" alt="notifications" />
+                    <div class="color">
+                        <span>k</span>
+                    </div>
                 </div>
-                <div class="profile">
+                <div class="roles-user">
+                    <p id="role-heading">ROLE / USER MANAGEMENT</p>
+                    <div class="roles">
 
-                    <img src="assets/profie-icon.png" alt="profile-icon" />
+                        <img src="assets/Horizontal nav/Roles.svg" alt="roles-icon" class="role-icon" />
+                        <span><a href="role.html" title="Roles" class="links">Roles</a></span>
+                        <img src="assets/rightarrow.png" id="right-arrow" alt="right-arrow" />
+                        
+                    </div>
+                    <div class="access-rights">
+                        <img src="assets/Horizontal nav/assign user.svg" alt="assign_user" class="role-icon" />
 
-                    <div class="profile-name">
-                        <span>John Abraham</span>
-                        <span id="admin">Admin</span>
+                        <span><a href="#" title="Access rights" class="links">Access right</a></span>
+                        <img src="assets/rightarrow.png" id="right-arrow2" alt="right-arrow" />
                     </div>
 
-                    <img src="assets/down-arrow.png" alt="down-arrow" id="down-arrow" />
+                </div>
 
-                </div>
+
             </div>
-        </header>
-        <main>
-            <div class="employee-section">
-                <div class="employees">
-                    <p>
-                        Employees
-                    </p>
-                    <p id="note">
-                        Find all of your company's employee accounts and their associated roles.
-                    </p>
-                </div>
-                <div class="changes-icon">
-                    <div class="export">
-                        <img src="assets/Interface/Export.svg" alt="export-icon" id="export-icon" />
-                        <span>Export</span>
-                    </div>
-                    <div class="add-employee">
-                        <img src="assets/add.png" alt="export-icon" id="export-icon" />
-                        <span>ADD EMPLOYEE</span>
+
+            <div class="install">
+                <div class="install-update">
+                    <p>Install new update 2.3.1A</p>
+                    <span>Allow to launch the new update for the AD application</span>
+                    <div class="btn">
+                        <button id="dismiss">Dismiss</button>
+                        <button id="accept">Accept</button>
                     </div>
                 </div>
             </div>
-            <div class="filter-section">
-                <img src="assets/Interface/filter.svg" alt="filter-icon" />
+        </aside>
+        <div class="main-content">
+            <header class="header">
+                <div> <button type="submit" id="handle-logo" onclick="myFunction()"> <img src="assets/handle.png"
+                            alt="handle" /></button> </div>
 
-                <div class="btn-section">
+                <div class="search-bar">
+
+                    <img src="assets/bx-search.png" alt="search-icon" id="search" />
+                    <input type="text" name="searchbar" placeholder="Search">
+                    <div class="header-icon">
+                        <img src="assets/Vertical Navbar/Language.svg" alt="lang-logo" />
+                        <img src="assets/Vertical Navbar/Categories.svg" alt="category" />
+                        <img src="assets/Vertical Navbar/Mode.svg" alt="mode" />
+                        <img src="assets/Vertical Navbar/Notifications.svg" alt="notifications" />
+                    </div>
+                    <div class="profile">
+
+                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                        <div class="status">
+
+                        </div>
+
+                        <div class="profile-name">
+                            <span>John Abraham</span>
+                            <span id="admin">Admin</span>
+                        </div>
+
+                        <img src="assets/down-arrow.png" alt="down-arrow" id="down-arrow" />
+
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="employee-section">
+                    <div class="employees">
+                        <p>
+                            Employees
+                        </p>
+                        <p id="note">
+                            Find all of your company's employee accounts and their associated roles.
+                        </p>
+                    </div>
+                    <div class="changes-icon">
+                        <div class="export">
+                            <img src="assets/Interface/Export.svg" alt="export-icon" id="export-icon" />
+                            <span>EXPORT</span>
+                        </div>
+                       <div class="add-employee">
+                            <img src="assets/Interface/Add.svg" alt="export-icon" id="export-icon" />
+                            <span>ADD EMPLOYEEE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <div class="sort-icon">
+                    <img src="assets/Interface/filter.svg" alt="filter-icon" />
+                    </div>
+                    <div class="btn-section">
                     <button class="btn-icon">A</button>
                     <button class="btn-icon">B</button>
-                    <button class="btn-icon" id="c-button">C</button>
+                    <button class="btn-icon">C</button>
                     <button class="btn-icon">D</button>
                     <button class="btn-icon">E</button>
                     <button class="btn-icon">F</button>
@@ -133,425 +149,463 @@
                     <button class="btn-icon">X</button>
                     <button class="btn-icon">Y</button>
                     <button class="btn-icon">Z</button>
-                    <button class="btn-icon">Z</button>
+                  
                 </div>
-            </div>
+                </div>
 
-            <div class="advance-filter-section">
-                <div class="advance-filter">
-                    <div class="filter-side">
-                    <span id="filter">Filter</span>
-                    
-                    <img src="assets/sort.png" alt="sort" id="sort-icon" />
-                </div>
-                    <select name="status" class="dropdown">
-                        <option value="EN">Status</option>
-                        <option value="EN">Active</option>
-                        <option value="EN">In active</option>
-                    </select>
-                    <select name="location" class="dropdown">
-                        <option value="EN">Location</option>
-                        <option value="EN">Hyderabad</option>
-                        <option value="EN">Tirupati</option>
-                    </select>
-                    <select name="department" class="dropdown">
-                        <option value="EN">Department</option>
-                        <option value="EN">Full stack Department</option>
-                        <option value="EN">Quality Assurance</option>
-                    </select>
-                </div>
-                <div class="order-btn">
-                    <div><button id="reset">Reset</button></div>
-                    <div><button id="apply">Apply</button></div>
-                </div>
-            </div>
+                <div class="advance-filter-section">
+                    <div class="advance-filter">
+                        <div class="filter-side">
+                            <span id="filter">Filter</span>
 
-            <!-- table starts here -->
-            <section class="table-container">
-                <div class="change-section">
-                    <div class="change-section-left">
-                        <img src="assets/Interface/arrow-turn left -down.svg" alt="turn left down" id="left-down" />
-                        <button id="apply">Delete</button>
+                            <img src="assets/sort.png" alt="sort" id="sort-icon" />
+                        </div>
+                        <select name="status" class="dropdown">
+                            <option value="EN">Status</option>
+                            <option value="EN">Active</option>
+                            <option value="EN">In active</option>
+                        </select>
+                        <select name="location" class="dropdown">
+                            <option value="EN">Location</option>
+                            <option value="EN">Hyderabad</option>
+                            <option value="EN">Tirupati</option>
+                        </select>
+                        <select name="department" class="dropdown">
+                            <option value="EN">Department</option>
+                            <option value="EN">Full stack Department</option>
+                            <option value="EN">Quality Assurance</option>
+                        </select>
                     </div>
-
-                    <div class="change-section-right">
-                        <img src="assets/Interface/table-add.svg" alt="table add" id="left-down" />
+                    <div class="order-btn">
+                        <div><button id="reset">Reset</button></div>
+                        <div><button id="apply">Apply</button></div>
                     </div>
                 </div>
 
-                <table class="table">
-                    <thead>
-                        <tr class="table-header">
-                            <th>
-                                <input type="checkbox">
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>USER</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>LOCATION</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>DEPARTMENT</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>ROLE</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>EMP NO</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>STATUS</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <div class="table-head">
-                                    <span>JOIN DT</span>
-                                    <img src="assets/up-and-down-arrow.png" alt="up and down" />
-                                </div>
-                            </th>
-                            <th>
-                                <span>...</span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
+                <!-- table starts here -->
+                <section class="table-container">
+                    <div class="change-section">
+                        <div class="change-section-left">
+                            <img src="assets/Interface/arrow-turn left -down.svg" alt="turn left down" id="left-down" />
+                            <button id="delete">Delete</button>
+                        </div>
 
-                                        <span class="email">edgar@Tezo.com</span>
+                        <div class="change-section-right">
+                            <img src="assets/Interface/table-add.svg" alt="table add" id="left-down" />
+                        </div>
+                    </div>
+
+                    <table class="table">
+                        <thead>
+                            <tr class="table-header">
+                                <th>
+                                    <input type="checkbox">
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>USER</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>LOCATION</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>DEPARTMENT</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span>Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>ROLE</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>EMP NO</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>STATUS</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
+                                </th>
+                                <th>
+                                    <div class="table-head">
+                                        <span>JOIN DT</span>
+                                        <img src="assets/up-and-down-arrow.png" alt="up and down" />
                                     </div>
+                                </th>
+                                <th>
+                                    <img src="assets/dots.png" alt="more-icon">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
 
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <div class="user-data">
-                                    <img src="assets/profie-icon.png" alt="profile-icon" />
-                                    <div class="user-name">
-                                        <span class="name">Edgar Tones</span>
-
-                                        <span class="email">edgar@Tezo.com</span>
                                     </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
 
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">Hyderabad</span>
-                            </td>
-                            <td>
-                                <span class="name">Product Engg</span>
-                            </td>
-                            <td>
-                                <span class="name">Full-Stack developer</span>
-                            </td>
-                            <td>
-                                <span class="name">TZ002341</span>
-                            </td>
-                            <td>
-                                <div class="active">
-                                    <span class="name">Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="name">12/03/2023</span>
-                            </td>
-                            <td>
-                                <span class="name">...</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
 
-    </div>
-    </div>
-    </main>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </main>
+        </div>
+    </section>
 </body>
 
 </html>

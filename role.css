@@ -1,0 +1,268 @@
+
+
+body {
+    margin-top: 0;
+    font-family: publicsans;
+    font-size: 12px;
+    background-color: #FCFCFC;
+}
+.main-section {
+    display: flex;
+    gap:1rem;
+}
+.main-content{
+    width:90%;
+   
+}
+
+.roles{
+      background-color: var(--background);
+}
+
+
+/* role section css */
+.role-desc{
+    display:flex;
+    flex-direction: column;
+    line-height:1.5rem;   
+
+
+}
+#role-heading{
+    padding-left:1rem;
+}
+.text-color{
+    color:var(--gray);
+}
+.add-role{
+    background-color: var(--click);
+    padding-top:0.5rem;
+    width:7rem;
+    height:1.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius:5px;
+    color:var(--white);
+    gap:0.5rem;
+    cursor:pointer;
+    margin-top: 0.5rem;
+}
+#add{
+    width:1rem;
+    height:1rem;
+}
+.role-section{
+    display: flex;
+    /* gap:40rem; */
+    justify-content: space-between;
+    margin-top:1rem;
+}
+
+/* filter section  */
+
+.filter-section{
+    display:flex;
+    /* gap:26rem; */
+    justify-content: space-between;
+    margin-top:1rem;
+    background-color: var(--background);
+    padding:0.5rem;
+    border:1px solid var(--border);
+    border-radius:5px;
+}
+.filter-section-left{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap; 
+    
+}
+.filter-btn{
+    display:flex;
+    gap:0.5rem;
+    margin-top:0.5rem;
+}
+#filter-icon{
+    width:1rem;
+    height:1rem;
+}
+.dropdown{
+    border:1px solid var(--border);
+    outline:none;
+    padding:0.5rem;
+    border-radius:5px;
+    
+
+}
+.order-btn{
+    display:flex;
+    /* padding:0.5rem; */
+    gap:1rem;
+}
+
+#reset {
+    border: 1px solid  var(--btn-color);
+    padding:0.5rem;
+    padding-left:1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    /* width:5rem; */
+    color:var(--btn-color);
+    background: var(--white);
+    cursor:pointer;
+}
+
+#apply {
+    border: none;
+    padding: 0.5rem;
+    padding-left:1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    border-radius: 5px;
+    background: var(--click);
+    color: var(--white);
+    cursor:pointer;
+}
+#filter{
+    color:var(--red);
+}
+
+/* main content css */
+
+.role-container{
+    margin-top:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+.role-card{
+    width:25%;
+    background-color: var(--white);
+    padding:2rem;
+    border:1px solid var(--gray);
+    border-radius:8px;
+    flex-wrap:wrap;
+}
+.role-card a{
+    text-decoration: none;
+    color:black;
+}
+.role-name{
+    display: flex;
+    font-size:15px;
+    font-weight:700;
+   justify-content: space-between;
+   align-items:center;
+
+}
+.color{
+    margin-left:1rem;
+}
+.department{
+    display: flex;
+     justify-content: space-between;
+     margin-top:1rem;
+     flex-wrap: wrap;
+}
+
+.dept{
+    display: flex;
+    justify-content: space-between  ;
+    
+}
+.town{
+    display:flex;
+    justify-content: space-between;
+    margin-top:1rem;
+    flex-wrap: wrap;
+}
+#town-name,#dept-name{
+   color:#5f6570;
+}
+.view-emp{
+    display:flex;
+    justify-content: flex-end;
+    margin-top:1rem;
+    cursor:pointer;
+}
+.view-emp img{
+    height:1rem;
+
+}
+.total-emp{
+    margin-top:1rem;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    z-index:1;
+}
+.icons img{
+    height:1rem;
+}
+#profile1{
+    position:absolute;
+    z-index: 2;
+    left: 82%;
+}
+
+#profile2{
+    position:absolute;
+    width:1rem;
+    height:1rem;
+    z-index:3;
+    left: 85%;
+}
+#profile3{
+    position:absolute;
+    width:1rem;
+    height:1rem;
+    z-index:4;
+    left: 88%;
+}
+#profile4{
+    position:absolute;
+    width:1rem;
+    height:1rem;
+    z-index:5;
+    left: 91%;
+}
+#total-cnt{
+    width:1rem;
+    height:1rem;
+    border-radius:50%;
+    position:absolute;
+    font-size:10.2px;
+    left:94%;
+    z-index:7;
+    background-color: var(--white);
+}
+
+@media  screen and (max-width:1200px) {
+    #side-nav{
+        width:5%;
+        overflow:hidden;
+    }
+    .install{
+        display: none;
+    }
+    .main-content{
+        width:90%;
+    }
+    .all,#role-heading{
+        display:none;
+    }
+    .roles{
+        background-color:transparent;
+    }
+  
+}
+@media  screen and (max-width:900px) {
+    #side-nav{
+        width:7%;
+        overflow:hidden;
+    }
+    .roles{
+        background-color:transparent;
+    }
+  
+  
+}
