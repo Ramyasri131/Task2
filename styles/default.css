@@ -1,10 +1,10 @@
 @font-face {
     font-family: publicsans;
-    src: url(assets/fonts/PublicSans-VariableFont_wght.ttf);
+    src: url(/assets/fonts/PublicSans-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: albertsans;
-    src: url(assets/fonts/AlbertSans-VariableFont_wght.ttf);
+    src: url(/assets/fonts/AlbertSans-VariableFont_wght.ttf);
     
 }
 :root {
@@ -26,6 +26,7 @@
     flex-direction: column;
     display: flex;
     position: relative;
+    /* overflow:hidden; */
 }
 
 .side-bar {
@@ -234,7 +235,7 @@
 }
 .profile-name{
     display:flex;
-    flex-direction: column;
+    /*  sflex-direction: column; */
     padding-left:0.5rem;
 }
 #admin{

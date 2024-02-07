@@ -17,6 +17,7 @@ body {
 
 .roles{
       background-color: var(--background);
+      position:relative;
 }
 
 
@@ -69,6 +70,8 @@ body {
     padding:0.5rem;
     border:1px solid var(--border);
     border-radius:5px;
+    flex-wrap:wrap;
+  
 }
 .filter-section-left{
     display:flex;
@@ -133,6 +136,7 @@ body {
     display:flex;
     flex-wrap:wrap;
     gap:1rem;
+    width:100%;
 }
 .role-card{
     width:25%;
@@ -155,7 +159,8 @@ body {
 
 }
 .color{
-    margin-left:1rem;
+  left:16rem;
+    position:absolute;
 }
 .department{
     display: flex;
@@ -238,9 +243,11 @@ body {
 
 @media  screen and (max-width:1200px) {
     #side-nav{
-        width:5%;
+        width:0%;
         overflow:hidden;
+        /* background-color: transparent; */
     }
+
     .install{
         display: none;
     }
@@ -253,16 +260,37 @@ body {
     .roles{
         background-color:transparent;
     }
-  
+    .filter-section{
+       row-gap:1rem;
+    }
+    .dropdown{
+        width:40%;
+    }
+    .profile-name{
+        display: none;
+    }
+    .role-card {
+        width:40%;
+    }
 }
 @media  screen and (max-width:900px) {
-    #side-nav{
-        width:7%;
-        overflow:hidden;
+    .role-card{
+        width:38%;
     }
-    .roles{
-        background-color:transparent;
-    }
-  
-  
 }
+@media  screen and (max-width:700px) {
+    .role-card{
+        width:35%;
+    }
+}
+@media  screen and (max-width:550px) {
+    .role-card{
+        width:30%;
+    }
+}
+@media  screen and (max-width:450px) {
+    .role-card{
+        width:25%;
+    }
+}
+

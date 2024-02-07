@@ -12,6 +12,7 @@ body {
 /* side bar css */
 .roles{
     background-color: var(--background);
+   
 }
 
 
@@ -72,7 +73,9 @@ body {
 .add-employee{
     margin-top:1rem;
     display:flex;
-    gap:37rem;
+    /* gap:37rem; */
+    justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 /* role desc */
@@ -120,12 +123,14 @@ body {
 .employee-info{
     padding:0.5rem;
     display: flex;
-    gap:1.5rem;
+    /* gap:1.5rem; */
     margin-top:0.1rem;
+    flex-wrap:wrap;
     /* font-size: 13px; */
 }
 .employee-info span{
     color:#5f6570;
+    padding-left:0.2rem;
 }
 .view{
     display: flex;
@@ -140,6 +145,7 @@ body {
 }
 .card-content{
     width:80%;
+    /* display: flex; */
 }
 #emp-name{
     font-weight:600;
@@ -178,5 +184,61 @@ body {
 }
 
 
+@media  screen and (max-width:1200px) {
+    #side-nav{
+        width:0%;
+        overflow:hidden;
+        /* background-color: transparent; */
+    }
 
+    .install{
+        display: none;
+    }
+    .main-content{
+        width:90%;
+    }
+    .all,#role-heading{
+        display:none;
+    }
+    .roles{
+        background-color:transparent;
+    }
+    .filter-section{
+       row-gap:1rem;
+    }
+    .dropdown{
+        width:40%;
+    }
+    .profile-name{
+        display: none;
+    }
+    .details-card {
+        width:40%;
+    }
+}
+@media  screen and (max-width:900px) {
+    .details-card{
+        width:38%;
+    }
+}
+@media  screen and (max-width:700px) {
+    .details-card{
+        width:35%;
+    }
+}
+@media  screen and (max-width:550px) {
+    .details-card{
+        width:30%;
+    }
+}
+@media  screen and (max-width:450px) {
+    
+    .card-content{
+        width:80%;
+    }
+    .details-card{
+        width:100%;
+        /* flex-direction: column; */
+    }
+}
 

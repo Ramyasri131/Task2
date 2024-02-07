@@ -5,8 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tezo portal</title>
-    <link rel="stylesheet" href="default.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        var handle = true;
+        let myFunction = () =>{
+            if(handle == false)
+                openHandle();
+            else
+                closeHandle();
+            handle = !handle;
+        }
+        function openHandle(){
+            const sb = document.querySelector('#side-nav');
+            const mc = document.querySelector('.main-content');
+            sb.style.display = "block";
+            sb.style.width = "40%";
+            // sb.display.overflow="visible";
+            mc.style.width = "80%";
+        }
+        
+        function closeHandle(){
+            const sb = document.querySelector('#side-nav');
+            const mc = document.querySelector('.main-content');
+            sb.style.display = "none";
+            mc.style.width = "100%";
+        }
+    </script>
+
 </head>
 
 <body>
@@ -88,11 +114,13 @@
                         </div>
 
                         <div class="profile-name">
+                            <div>
                             <span>John Abraham</span>
                             <span id="admin">Admin</span>
                         </div>
+                            <img src="assets/down-arrow.png" alt="down-arrow" id="down-arrow" />
 
-                        <img src="assets/down-arrow.png" alt="down-arrow" id="down-arrow" />
+                        </div>
 
                     </div>
                 </div>
@@ -123,32 +151,32 @@
                     <img src="assets/Interface/filter.svg" alt="filter-icon" />
                     </div>
                     <div class="btn-section">
-                    <button class="btn-icon">A</button>
-                    <button class="btn-icon">B</button>
-                    <button class="btn-icon">C</button>
-                    <button class="btn-icon">D</button>
-                    <button class="btn-icon">E</button>
-                    <button class="btn-icon">F</button>
-                    <button class="btn-icon">G</button>
-                    <button class="btn-icon">H</button>
-                    <button class="btn-icon">I</button>
-                    <button class="btn-icon">J</button>
-                    <button class="btn-icon">K</button>
-                    <button class="btn-icon">L</button>
-                    <button class="btn-icon">M</button>
-                    <button class="btn-icon">N</button>
-                    <button class="btn-icon">O</button>
-                    <button class="btn-icon">P</button>
-                    <button class="btn-icon">Q</button>
-                    <button class="btn-icon">R</button>
-                    <button class="btn-icon">S</button>
-                    <button class="btn-icon">T</button>
-                    <button class="btn-icon">U</button>
-                    <button class="btn-icon">V</button>
-                    <button class="btn-icon">W</button>
-                    <button class="btn-icon">X</button>
-                    <button class="btn-icon">Y</button>
-                    <button class="btn-icon">Z</button>
+                   <div><button class="btn-icon">A</button></div> 
+                   <div><button class="btn-icon">B</button></div>
+                    <div><button class="btn-icon">C</button></div>
+                    <div><button class="btn-icon">D</button></div>
+                    <div><button class="btn-icon">E</button></div>
+                    <div><button class="btn-icon">F</button></div>
+                    <div><button class="btn-icon">G</button></div>
+                    <div><button class="btn-icon">H</button></div>
+                    <div><button class="btn-icon">I</button></div>
+                    <div><button class="btn-icon">J</button></div>
+                    <div><button class="btn-icon">K</button></div>
+                    <div><button class="btn-icon">L</button></div>
+                    <div><button class="btn-icon">M</button></div>
+                    <div><button class="btn-icon">N</button></div>
+                    <div><button class="btn-icon">O</button></div>
+                    <div> <button class="btn-icon">P</button></div>
+                    <div> <button class="btn-icon">Q</button></div>
+                    <div><button class="btn-icon">R</button></div>
+                    <div><button class="btn-icon">S</button></div>
+                    <div><button class="btn-icon">T</button></div>
+                    <div><button class="btn-icon">U</button></div>
+                    <div><button class="btn-icon">V</button></div>
+                    <div><button class="btn-icon">W</button></div>
+                    <div><button class="btn-icon">X</button></div>
+                    <div><button class="btn-icon">Y</button></div>
+                    <div><button class="btn-icon">Z</button></div>
                   
                 </div>
                 </div>
@@ -160,6 +188,7 @@
 
                             <img src="assets/sort.png" alt="sort" id="sort-icon" />
                         </div>
+                        <div>
                         <select name="status" class="dropdown">
                             <option value="EN">Status</option>
                             <option value="EN">Active</option>
@@ -175,6 +204,7 @@
                             <option value="EN">Full stack Department</option>
                             <option value="EN">Quality Assurance</option>
                         </select>
+                    </div>
                     </div>
                     <div class="order-btn">
                         <div><button id="reset">Reset</button></div>
@@ -244,7 +274,7 @@
                                     </div>
                                 </th>
                                 <th>
-                                    <img src="assets/dots.png" alt="more-icon">
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </th>
                             </tr>
                         </thead>
@@ -284,7 +314,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -322,7 +352,159 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             
@@ -362,7 +544,119 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr> <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
+                                </td>
+                            </tr> <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="user-data">
+                                        <img src="assets/profie-icon.png" alt="profile-icon" />
+                                        <div class="user-name">
+                                            <span class="name">Edgar Tones</span>
+                                            <span class="email">edgar@Tezo.com</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">Hyderabad</span>
+                                </td>
+                                <td>
+                                    <span class="name">Product Engg</span>
+                                </td>
+                                <td>
+                                    <span class="name">Full-Stack developer</span>
+                                </td>
+                                <td>
+                                    <span class="name">TZ002341</span>
+                                </td>
+                                <td>
+                                    <div class="active">
+                                        <span class="name">Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="name">12/03/2023</span>
+                                </td>
+                                <td>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -401,7 +695,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -440,7 +734,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -479,7 +773,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -518,7 +812,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -557,7 +851,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                             <tr>
@@ -596,7 +890,7 @@
                                     <span class="name">12/03/2023</span>
                                 </td>
                                 <td>
-                                    <span class="name"><img src="assets/dots.png" alt="more-icon"></span>
+                                    <img src="assets/dots.png" alt="more-icon" id="more">
                                 </td>
                             </tr>
                         </tbody>

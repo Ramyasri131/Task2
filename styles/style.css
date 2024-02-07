@@ -13,8 +13,9 @@ body {
     
 }
 .main-content {
-    width: 90%;
+    width: 100%;
     font-family: albertsans;
+    margin-left: 1.5rem;
 }
 .table-header{
     background: var(--gray-50);
@@ -41,6 +42,7 @@ body {
 .employee-tag-left{
     display:flex;
     gap:0.8rem;
+    position: relative;
 }
 #employee-tag img{
     width:1.5rem;
@@ -73,7 +75,9 @@ body {
     gap:1rem;
 } 
 .color{
-    margin-left:7.6rem;
+    /* margin-left:7.6rem; */
+    left:17.5rem;
+    position:absolute;
 }
 
 .employee-section {
@@ -81,6 +85,7 @@ body {
     gap:0rem;
     margin-top: 1rem;
     justify-content: space-between;
+    flex-wrap:wrap;
     
 }
 .employee-section p{
@@ -104,7 +109,7 @@ body {
     align-content: flex-end;
  
     padding-top: 1.5rem;
-    padding-left:11rem;
+    /* padding-left:11rem; */
     gap: 1rem;
 }
 
@@ -145,7 +150,11 @@ body {
     display: flex;
     gap:0.3rem;
     padding-top: 0.4rem;
+    /* flex-wrap:wrap; */
     padding-bottom: 0.4rem;
+    width:100%;
+    /* line-height: 1rem; */
+   
 }
 .sort-icon{
     cursor:pointer;
@@ -164,9 +173,10 @@ body {
 
 .btn-section{
     display:flex;
-    height:2rem;
-    width:1rem;
+    /* height:2rem; */
+    /* width:1rem; */
     gap:0.15rem;
+     flex-wrap:wrap;
 }
 
 .btn-icon {
@@ -194,6 +204,8 @@ body {
     padding: 0.8rem;
     border: 1px solid var(--border);
     border-radius: 5px;
+    /* margin-top:1rem; */
+    flex-wrap:wrap;
 }
 .filter-side{
     display: flex;
@@ -267,14 +279,18 @@ body {
     margin-top: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius:5px;
+    width:100%;
 }
 
 
 .change-section {
     display: flex;
-    gap: 87%;
+    /* gap: 87%; */
+    width:97%;;
     padding: 1rem;
-    justify-content: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    /* position:fixed; */
     
 }
 
@@ -291,6 +307,10 @@ body {
 #left-down{
     cursor: pointer;
 }
+
+.table{
+    width:100%;
+}
 .table-head {
     display: flex;
 
@@ -300,96 +320,36 @@ body {
     height: 1rem;
 
 }
-th img{
-    width:1rem;
-    height:1rem;
-}
-td img{
-    width:1rem;
-    height:1rem;
-}
+
 .table {
+    /* border:1px solid var(--black); */
     background-color: var(--white);
     border-collapse: collapse;
-    height:0.3rem;
-    
+    display:block;  
+    table-layout: fixed;
+    display: block  ;
+    height:1000px;
+    overflow: auto;
 }
 
-tr th:nth-child(1),tr td:nth-child(1){
-    width:5%;
-   padding-left:1rem;
-   /* background-color: red; */
-   
-}
-tr th:nth-child(2),tr td:nth-child(2){
-    width:15%;
-    
-}
-tr th:nth-child(3),tr td:nth-child(3){
-    width:10%;
-    
-}
-tr th:nth-child(4),tr td:nth-child(4){
-    width:10%;
-    
-}
-tr th:nth-child(5),tr td:nth-child(5){
-    width:15%;
-   
-    
-}
-tr th:nth-child(6),tr td:nth-child(6){
-    width:10%;
-   
-    
-}
-tr th:nth-child(7),tr td:nth-child(7){
-    width:12%;
-   
-    
-}
-tr th:nth-child(8), td:nth-child(8){
-   width:10%;
-   
-    
-}
+
+.table::-webkit-scrollbar {
+    display: none;
+  }
 
 .table th,
 td {
-    /* padding-left: 1rem; */
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
+    padding: 1.1rem;
 
-    border-top: 1px solid var(--gray);
-   
-}
-thead{
-    display:table;
-    width:100%;
-    table-layout: fixed;
-    
-   
-}
-tbody tr{
-    display:table;
-    width:100%;
-    table-layout: fixed;
-    
-   
-}
-tbody {
-    height: 400px;
-    display:inline-block;
-    overflow-y:scroll;
-  
-}
-tbody::-webkit-scrollbar { 
-    display: none; 
+    border-top: 1px solid var(--black);
 }
 
-.table tr:hover{
-    background-color:#FFF4F4;
+
+#more{
+    width:1rem;
+    height:1rem;
 }
+
 .user-data {
     display: flex;
     /* gap:0.5rem; */
@@ -413,14 +373,18 @@ tbody::-webkit-scrollbar {
 
 @media  screen and (max-width:1200px) {
     #side-nav{
-        width:5%;
-        overflow:hidden;
+        width:20%;
+        overflow: hidden; 
+       /* background-color: transparent; */
+    }
+    #employee-tag{
+        background-color: transparent;
     }
     .install{
         display: none;
     }
     .main-content{
-        width:90%;
+        width:80%;
     }
     .all,#role-heading{
         display:none;
@@ -428,16 +392,33 @@ tbody::-webkit-scrollbar {
     .roles{
         background-color:transparent;
     }
-  
+    .profile-name{
+        display: none;
+    }
+    .color{
+        display:none;
+    }
+ 
+   
 }
 @media  screen and (max-width:900px) {
     #side-nav{
-        width:7%;
-        overflow:hidden;
+        display:none;
+        width:0%;
+     overflow: visible;
+      
     }
     .roles{
         background-color:transparent;
     }
-  
+    .advance-filter{
+        flex-direction: column;
+    }
+    .order-btn{
+        margin-top:1rem;
+    }
+    .advance-filter-section{
+        width:90%;
+    }
   
 }
