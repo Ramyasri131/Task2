@@ -1,0 +1,220 @@
+
+
+body {
+    margin-top: 0;
+    font-family: publicsans;
+    font-size: 12px;
+    display:flex;
+    background-color: #FCFCFC;
+    gap:1rem;
+}
+
+/* side bar css */
+.roles{
+    background-color: var(--background);
+   
+}
+
+
+/* main content */
+
+/* add-employee */
+
+.roles-employees{
+  display:flex;
+  gap:1rem;
+  color:var(--gray-100);
+  font-weight:600;
+ 
+  /* padding:5rem; */
+}
+
+#role{
+    font-size:15px;
+    
+}
+#role a{
+    text-decoration: none;
+    color:#4d4e4e;
+}
+#role-right{
+   height:0.6rem; 
+   width:0.6rem;
+}
+.color{
+    margin-left:1rem;
+}   
+.add-employee-box {
+    background: var(--click);
+    height:1rem;
+    width:8rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    padding-left:1.3rem;
+    border-radius: 8px;
+    margin-top:0.5rem;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    gap:0.3rem;
+}
+
+.all-roles{
+    padding-top:1rem;
+    color:var(--gray);
+}
+#export-icon {
+    width: 1rem;
+    height: 1rem;
+  
+
+}
+
+.add-employee{
+    margin-top:1rem;
+    display:flex;
+    /* gap:37rem; */
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+/* role desc */
+#role-data{
+    font-size:14px;
+    font-weight:700;
+}
+
+.role-desc span{
+    color:var(--gray);
+    line-height:1.3rem;
+}
+
+/* styling for content of page */
+
+.details-section{
+    margin-top:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+.details-card{
+    display: flex;
+    padding:1rem;
+    background: var(--white);
+    gap:1rem;
+    width:28.5%;
+    height:13rem;
+    border-radius: 10px;
+    border:1px solid var(--gray);
+}
+.employee-details{
+    display:flex;
+}
+.employee-details img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.employee-name{
+    display: flex;
+    flex-direction: column;
+    padding-left:1rem;
+}
+.employee-info{
+    padding:0.5rem;
+    display: flex;
+    /* gap:1.5rem; */
+    margin-top:0.1rem;
+    flex-wrap:wrap;
+    /* font-size: 13px; */
+}
+.employee-info span{
+    color:#5f6570;
+    padding-left:0.2rem;
+}
+.view{
+    display: flex;
+    align-items:flex-end;
+    gap:0.5rem;
+    cursor: pointer;
+    
+}
+.view img{
+    width:1rem;
+    height:1rem;
+}
+.card-content{
+    width:80%;
+    /* display: flex; */
+}
+#emp-name{
+    font-weight:600;
+}
+
+
+@media  screen and (max-width:1200px) {
+    #side-nav{
+        /* width:0%; */
+        /* overflow:hidden; */
+        display:none;
+        position:fixed;
+       z-index:1;
+       height:100%;
+        /* background-color: transparent; */
+    }
+
+    .install{
+        display: none;
+    }
+    .main-section{
+        /* width:90%; */
+        margin-left:0.05rem;
+    }
+    .all,#role-heading{
+        display:none;
+    }
+    .roles{
+        background-color:transparent;
+    }
+    .filter-section{
+       row-gap:1rem;
+    }
+    .dropdown{
+        width:40%;
+    }
+    .profile-name{
+        display: none;
+    }
+    .details-card {
+        width:40%;
+    }
+}
+@media  screen and (max-width:900px) {
+    .details-card{
+        width:38%;
+    }
+    #hamburger-menu{
+        display:block;
+    }
+}
+@media  screen and (max-width:700px) {
+    .details-card{
+        width:35%;
+    }
+}
+@media  screen and (max-width:550px) {
+    .details-card{
+        width:30%;
+    }
+}
+@media  screen and (max-width:450px) {
+    
+    .card-content{
+        width:80%;
+    }
+    .details-card{
+        width:100%;
+        /* flex-direction: column; */
+    }
+}
+
