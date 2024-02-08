@@ -243,11 +243,16 @@ body {
 
 @media  screen and (max-width:1200px) {
     #side-nav{
-        width:0%;
-        overflow:hidden;
+        
+        display: none;
+        position:fixed;
+       z-index:8;
+       height:100%;
         /* background-color: transparent; */
     }
-
+     .color{
+        display: none;
+     }
     .install{
         display: none;
     }
@@ -291,6 +296,9 @@ body {
 @media  screen and (max-width:450px) {
     .role-card{
         width:25%;
+    }
+    #hamburger-menu{
+        display:block;
     }
 }
 

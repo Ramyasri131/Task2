@@ -15,7 +15,7 @@ body {
 .main-content {
     width: 100%;
     font-family: albertsans;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
 }
 .table-header{
     background: var(--gray-50);
@@ -286,7 +286,7 @@ body {
 .change-section {
     display: flex;
     /* gap: 87%; */
-    width:97%;;
+    /* width:97%;; */
     padding: 1rem;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -308,31 +308,42 @@ body {
     cursor: pointer;
 }
 
-.table{
-    width:100%;
+/* table */
+/* table{
+    padding: 1rem;
+    width: 100%;
 }
+td{
+    padding: .5rem;
+    text-align: center;
+} */
+
+/* .table{
+    width:100%;
+} */
 .table-head {
     display: flex;
-
-}
-
-.table-head {
     height: 1rem;
-
 }
 
 .table {
     /* border:1px solid var(--black); */
     background-color: var(--white);
     border-collapse: collapse;
-    display:block;  
-    table-layout: fixed;
-    display: block  ;
+     
+     table-layout: table; 
+    /* display: block  ; */
     height:1000px;
-    overflow: auto;
+    /* width:1500px; */
+    overflow:auto;
+    width:100%;
+    
 }
 
-
+thead{
+   position:sticky;
+   top:0;
+} 
 .table::-webkit-scrollbar {
     display: none;
   }
@@ -340,10 +351,9 @@ body {
 .table th,
 td {
     padding: 1.1rem;
-
+    /* width:100%; */
     border-top: 1px solid var(--black);
 }
-
 
 #more{
     width:1rem;
@@ -373,9 +383,12 @@ td {
 
 @media  screen and (max-width:1200px) {
     #side-nav{
-        width:20%;
-        overflow: hidden; 
-       /* background-color: transparent; */
+        display: none;
+        /* overflow: hidden;  */
+       /* background-color: red; */
+       position:fixed;
+       z-index:1;
+       height:100%;
     }
     #employee-tag{
         background-color: transparent;
@@ -384,7 +397,7 @@ td {
         display: none;
     }
     .main-content{
-        width:80%;
+        width:100%;
     }
     .all,#role-heading{
         display:none;
@@ -398,14 +411,20 @@ td {
     .color{
         display:none;
     }
- 
+    #hamburger-menu{
+        display:block;
+    }
+    #handle-logo{
+        margin-left:-7rem;
+    }
+  
    
 }
 @media  screen and (max-width:900px) {
     #side-nav{
         display:none;
-        width:0%;
-     overflow: visible;
+        
+     /* overflow: visible; */
       
     }
     .roles{
@@ -420,5 +439,14 @@ td {
     .advance-filter-section{
         width:90%;
     }
+    .table{
+        display:block;
+    }
   
+}
+@media screen and (max-width:700px){
+    .side-nav{
+        
+        display:none;
+    }
 }

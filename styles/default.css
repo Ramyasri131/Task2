@@ -25,7 +25,8 @@
     background-color: var(--white);
     flex-direction: column;
     display: flex;
-    position: relative;
+    position:relative;
+   
     /* overflow:hidden; */
 }
 
@@ -63,6 +64,7 @@
    background: none;
    border:none; 
    cursor:pointer;
+   /* left:12rem; */
 }
 #handle-logo img{
     width:1.6rem;
@@ -186,12 +188,14 @@
     padding: 1rem;
     width: 100%;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 7px;
     background-color: var(--white);
     display: flex;
     height:1.7rem;
     justify-content: space-around;
+    /* align-items:center; */
     
 }
 
@@ -214,7 +218,19 @@
 
 
 }
-
+#hamburger-menu{
+    background: none;
+    border:none;
+    outline: none;
+    cursor:pointer;
+    display:none;
+}
+#hamburger-menu img{
+    width:1rem;
+    height:1rem;
+    margin-top:0.3rem;
+    
+}
 .profile {
     display: flex;
     position:relative;

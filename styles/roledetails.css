@@ -154,48 +154,21 @@ body {
 
 @media  screen and (max-width:1200px) {
     #side-nav{
-        width:10%;
-        overflow:hidden;
-    }
-    .install{
-        display: none;
-    }
-    .main-content{
-        width:90%;
-    }
-    .all,#role-heading{
+        /* width:0%; */
+        /* overflow:hidden; */
         display:none;
-    }
-    .roles{
-        background-color:transparent;
-    }
-  
-}
-@media  screen and (max-width:900px) {
-    #side-nav{
-        width:7%;
-        overflow:hidden;
-    }
-    .roles{
-        background-color:transparent;
-    }
-  
-  
-}
-
-
-@media  screen and (max-width:1200px) {
-    #side-nav{
-        width:0%;
-        overflow:hidden;
+        position:fixed;
+       z-index:1;
+       height:100%;
         /* background-color: transparent; */
     }
 
     .install{
         display: none;
     }
-    .main-content{
-        width:90%;
+    .main-section{
+        /* width:90%; */
+        margin-left:0.05rem;
     }
     .all,#role-heading{
         display:none;
@@ -219,6 +192,9 @@ body {
 @media  screen and (max-width:900px) {
     .details-card{
         width:38%;
+    }
+    #hamburger-menu{
+        display:block;
     }
 }
 @media  screen and (max-width:700px) {

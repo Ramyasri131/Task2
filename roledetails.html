@@ -6,31 +6,49 @@
     <title>Role details</title>
     <link rel="stylesheet" href="styles/default.css"/>
     <link rel="stylesheet" href="styles/roledetails.css"/>
-    <script>
-        var handle = true;
-        let myFunction = () =>{
-            if(handle == false)
-                openHandle();
-            else
-                closeHandle();
-            handle = !handle;
-        }
-        function openHandle(){
-            const sb = document.querySelector('#side-nav');
-            const mc = document.querySelector('.main-section');
-            sb.style.display = "block";
-            sb.style.width = "40%";
-            // sb.display.overflow="visible";
-            mc.style.width = "80%";
-        }
-        
-        function closeHandle(){
-            const sb = document.querySelector('#side-nav');
-            const mc = document.querySelector('.main-section');
-            sb.style.display = "none";
-            mc.style.width = "100%";
-        }
-    </script>
+<script>
+var handle = true;
+var x = window.matchMedia("(max-width: 700px)");
+let myFunction = () => {
+    if (handle == true)
+        closeHandle();
+    else 
+        openHandle(x);
+
+    handle = !handle;
+}
+
+function openHandle(x) {
+    const sb = document.querySelector('#side-nav');
+    const mc = document.querySelector('.main-section');
+    const hm = document.querySelector('#hamburger-menu');
+    // const hl = document.querySelector('#handle-logo');
+    // h1.style.display="block";
+    hm.style.display="none";
+    sb.style.display = "block";
+    if(x.matches)
+    {
+        sb.style.width = "100%";
+    }
+    else{
+    sb.style.width = "22%";
+    }
+    // sb.style.width = "22%";
+    // sb.display.overflow="hidden";
+    mc.style.width = "100%";
+}
+
+function closeHandle() {
+    const sb = document.querySelector('#side-nav');
+    const mc = document.querySelector('.main-section');
+    const hm = document.querySelector('#hamburger-menu');
+    // const hl = document.querySelector('#handle-logo');
+    // h1.style.display="none";
+    hm.style.display="block";
+    sb.style.display = "none";
+    mc.style.width = "100%";
+}
+</script>
 </head>
 <body>
 
@@ -39,7 +57,7 @@
         <div class="side-bar">
             <div class="logo">
                 <img src="assets/TezoLogo.png" id="tezoLogo" alt="tezo-logo" />
-               
+                <div> <button type="submit" id="handle-logo"  onclick="myFunction()"> <img src="assets/handle.png"  alt="handle" /></button> </div>
             </div>
             <p class="all" id="defintion">ALL</p>
             <div class="dashboard">
@@ -90,8 +108,9 @@
     
         <!--header starts here-->
         <header class="header">
-            <div> <button type="submit" id="handle-logo"  onclick="myFunction()"> <img src="assets/handle.png"  alt="handle" /></button> </div>
+           
             <div class="search-bar">
+                <button type="submit" id="hamburger-menu" onclick="myFunction()"><img src="assets/menu.png" alt="hamburger-menu" /></button>
                 <img src="assets/bx-search.png" alt="search-icon" id="search" />
                 <input type="text" name="searchbar" placeholder="Search" size="70">
                 <div class="header-icon">
